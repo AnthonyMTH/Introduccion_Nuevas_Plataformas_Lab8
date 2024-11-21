@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnCargarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar Datos de Prueba" />
+
+    <Button
+        android:id="@+id/btnConsultaUnoAUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulta 1:1 - Comentario y Calificación" />
+
+    <Button
+        android:id="@+id/btnConsultaUnoAMuchos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulta 1:N - Comentarios de Edificación" />
+
+    <Button
+        android:id="@+id/btnConsultaMuchosAMuchos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulta N:M - Usuarios y Calificaciones" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
