@@ -10,7 +10,7 @@ data class Edificacion(
     val descripcion: String,
     val latitud: Double,
     val longitud: Double,
-    val imagenes: String, // Usa TypeConverter para listas
+    val imagenes: String,
     val audio: String,
     val fechaConstruccion: String
 )
