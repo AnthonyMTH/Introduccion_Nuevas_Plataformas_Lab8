@@ -12,7 +12,6 @@ import com.example.myapplication.entities.Usuario
 import com.example.myapplication.entities.Comentario
 import com.example.myapplication.entities.Calificacion
 
-
 @Database(entities = [Edificacion::class, Usuario::class, Comentario::class, Calificacion::class], version = 1)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {

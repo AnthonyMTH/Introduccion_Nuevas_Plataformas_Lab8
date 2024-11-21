@@ -3,14 +3,14 @@ package com.example.myapplication.entities
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "Edificacion")
 data class Edificacion(
-    @PrimaryKey(autoGenerate = true) val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val nombre: String,
     val descripcion: String,
     val latitud: Double,
     val longitud: Double,
-    val imagenes: List<String>, // Usa TypeConverter para listas
+    val imagenes: String, // Usa TypeConverter para listas
     val audio: String,
     val fechaConstruccion: String
 )
